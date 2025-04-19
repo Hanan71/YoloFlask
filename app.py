@@ -5,7 +5,7 @@ import cv2
 import uuid
 
 app = Flask(__name__)
-model = YOLO("best.pt")  # تأكد أن ملف best.pt موجود في نفس المجلد
+model = YOLO("yolov5s.pt")  # استخدم الموديل المتوفر لديك
 
 UPLOAD_FOLDER = 'static/uploads'
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
